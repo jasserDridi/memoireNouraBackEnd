@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/event/event.iml" filepath="$PROJECT_DIR$/event/event.iml" />
+      <module fileurl="file://$PROJECT_DIR$/formation/formation.iml" filepath="$PROJECT_DIR$/formation/formation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/memoire.iml" filepath="$PROJECT_DIR$/.idea/memoire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/messagerie/messagerie.iml" filepath="$PROJECT_DIR$/messagerie/messagerie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newsletter/newsletter.iml" filepath="$PROJECT_DIR$/newsletter/newsletter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/promotion-discount/promotion-discount.iml" filepath="$PROJECT_DIR$/promotion-discount/promotion-discount.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/user/user.iml" filepath="$PROJECT_DIR$/user/user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payement/user (1).iml" filepath="$PROJECT_DIR$/payement/user (1).iml" />
+    </modules>
+  </component>
+</project>

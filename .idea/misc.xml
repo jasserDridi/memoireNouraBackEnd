@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="Quarkus" url="file://$PROJECT_DIR$/event" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/formation" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/messagerie" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/newsletter" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/payement" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/promotion-discount" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/service" />
+    <file type="Quarkus" url="file://$PROJECT_DIR$/user" />
+    <file type="Qute" url="file://$PROJECT_DIR$/messagerie" />
+    <file type="Qute" url="file://$PROJECT_DIR$/newsletter" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/user/pom.xml" />
+        <option value="$PROJECT_DIR$/event/pom.xml" />
+        <option value="$PROJECT_DIR$/service/pom.xml" />
+        <option value="$PROJECT_DIR$/payement/pom.xml" />
+        <option value="$PROJECT_DIR$/formation/pom.xml" />
+        <option value="$PROJECT_DIR$/messagerie/pom.xml" />
+        <option value="$PROJECT_DIR$/newsletter/pom.xml" />
+        <option value="$PROJECT_DIR$/promotion-discount/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
