@@ -1,7 +1,7 @@
 version: "2.2"
 services:
   event-ms:
-    image : event-ms:1.0.1
+    build : ./event/
     ports:
       - 8081:8080
     restart: always
@@ -9,16 +9,74 @@ services:
       - default
     env_file:
       - ./envFiles/event-ms
-  event-ms:
-    image: formation-ms:1.0.1
+  formation-ms:
+    build : ./formation/
     ports:
       - 8082:8080
     restart: always
     networks:
       - default
-
     env_file:
       - ./envFiles/formation-ms
+  payement-ms:
+    build : ./payement/
+    ports:
+      - 8083:8080
+    restart: always
+    networks:
+      - default
+    env_file:
+      - ./envFiles/payement-ms
+  messagerie-ms:
+    build : ./messagerie/
+    ports:
+      - 8084:8080
+    restart: always
+    networks:
+      - default
+    env_file:
+      - ./envFiles/messagerie-ms
+  promotion-discount-ms:
+    build : ./promotion-discount/
+    ports:
+      - 8085:8080
+    restart: always
+    networks:
+      - default
+    env_file:
+      - ./envFiles/promotion-discount-ms
+  service-ms:
+    build : ./service/
+    ports:
+      - 8086:8080
+    restart: always
+    networks:
+      - default
+    env_file:
+      - ./envFiles/service-ms
+  USER-ms:
+    build : ./USER/
+    ports:
+      - 8086:8080
+    restart: always
+    networks:
+      - default
+    env_file:
+      - ./envFiles/user-ms
+  mongo-db:
+    image: mongo:4.2
+    ports:
+      - 27017:27017
+    restart: always
+    container_name: mongodb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    networks:
+      - default
+    volumes:
+      - ./volumes/quarkus-db:/data/db
+
 networks:
   default:
     driver: bridge
