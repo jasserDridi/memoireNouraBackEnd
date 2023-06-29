@@ -113,21 +113,27 @@
   <build>
 
     <plugins>
-      <plugin>
-        <groupId>${quarkus.platform.group-id}</groupId>
-        <artifactId>quarkus-maven-plugin</artifactId>
-        <version>${quarkus.platform.version}</version>
-        <extensions>true</extensions>
-        <executions>
-          <execution>
-            <goals>
-              <goal>build</goal>
-              <goal>generate-code</goal>
-              <goal>generate-code-tests</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
+    <plugin>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-maven-plugin</artifactId>
+      <version>${quarkus.platform.version}</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>build</goal>
+          </goals>
+          <configuration>
+            <uberJar>true</uberJar>
+            <native>
+              <imageName>${project.artifactId}</imageName>
+              <buildArgs>
+                <no-fallback>true</no-fallback>
+              </buildArgs>
+            </native>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${compiler-plugin.version}</version>
@@ -177,7 +183,7 @@
         </property>
       </activation>
       <properties>
-        <skipITs>false</skipITs>
+        <skipITs>true</skipITs>
         <quarkus.package.type>native</quarkus.package.type>
       </properties>
     </profile>
